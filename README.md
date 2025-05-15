@@ -25,7 +25,6 @@ To exectute the batch transfer of the token, follow these steps:
 
     ```ini
     [event]
-    event_id = XXXXXXXXXXXXXXXXXXXXXXXX     # The id of the event
     holders = holders.json                  # The path to holders.json
     transactions = transactions.txt         # The path to transactions.txt
     block_size = 100                        # The batch size of txns
