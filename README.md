@@ -1,7 +1,27 @@
-# Batch Token Transfer Script 💻
+# Batch Token Transfer Contract 📄 + Script 💻
 
 
-This repository contains the `BatchTokenTransfer` abi file of contract + a script to perform batch transfers of specified token.
+This repository contains the `BatchTokenTransfer` contract + a script to perform batch transfers of specified token.
+
+## Batch Token Transfer Contract 📃
+
+### Contract setup
+
+1. Clone this repository
+2. Install NPM dependencies: `npm install`
+
+### Deploying the Batch Token Transfer Contract to Saigon
+
+1. Add your `PRIVATE_KEY` in `hardhat.config.js`.
+2. Run `npx hardhat compile` to compile the contracts.
+3. Run `npx hardhat test` to run the tests.
+4. Run `npx hardhat run deploy/deploy.js --network saigon` to deploy the contract to Saigon.
+5. Once the contract is deployed, verify it by running `npx hardhat sourcify --endpoint https://sourcify.roninchain.com/server/ --network saigon`.
+
+> **NOTE:** This exact process can be done to deploy the contract in Ronin (mainnet). The only modifications needed are the following: After step 3, _modify the `deploy/deploy.js` script to specify the token address (and comment the `ERC20Mock` deployment section)._ Also, change `saigon` to `ronin` in the commands to be run.
+
+
+## Batch Token Transfer Script 💻
 
 ### Python setup
 
